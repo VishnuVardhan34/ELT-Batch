@@ -1,0 +1,21 @@
+version: 2
+sources:
+  - name: raw
+    schema: main
+    tables:
+      - name: raw_orders
+models:
+  - name: stg_orders
+    columns:
+      - name: order_id
+        tests: [not_null, unique]
+  - name: fact_orders
+    columns:
+      - name: order_id
+        tests: [not_null, unique]
+      - name: customer_id
+        tests:
+          - relationships: {to: ref('dim_customers'), field: customer_id}
+      - name: product_id
+        tests:
+          - relationships: {to: ref('dim_products'), field: product_id}

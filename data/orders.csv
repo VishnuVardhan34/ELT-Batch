@@ -1,0 +1,5 @@
+order_id,customer_id,product_id,order_date,updated_at,quantity,unit_price,status
+o-1001,c-001,p-101,2026-01-01,2026-01-01T10:00:00Z,2,19.99,delivered
+o-1002,c-002,p-102,2026-01-02,2026-01-02T11:00:00Z,1,49.50,delivered
+o-1003,c-001,p-103,2026-01-03,2026-01-03T12:00:00Z,3,7.25,shipped
+o-1004,c-003,p-101,2026-01-03,2026-01-03T14:00:00Z,1,19.99,cancelled

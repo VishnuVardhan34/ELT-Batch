@@ -1,0 +1,1 @@
+select distinct customer_id from "warehouse"."main"."stg_orders"
